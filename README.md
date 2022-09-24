@@ -35,3 +35,19 @@ To build a local copy use the make wrapper for the golang build command
 ```sh
 make build
 ```
+
+## Release
+
+This repo uses GoReleaser to release new version of the utility. 
+
+Make sure `GITHUB_TOKEN` environment variable is set with a token that has repo access
+
+Add a new tag following semver to the github repository and make sure it is pushed to GitHub
+
+Create a new release with the following commend from the root of the repository
+
+```sh
+goreleaser release
+```
+
+More details on GoReleaser can be found in the [GoReleaser doco](https://github.com/goreleaser/goreleaser).

@@ -12,7 +12,7 @@ func main() {
 	app := &cli.App{
 		Name:  "dDuper",
 		Usage: "Removes duplicate files in folders and subfolders",
-		Version: "v0.0.1",
+		Version: "v0.0.2",
 		Action: func(*cli.Context) error {
 			return dduper.DDupeCurrentDir(true)
 		},
